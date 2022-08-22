@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class SortingCitiesTest {
+public class TripToSwitzerlandTest {
     SortingCities sortingCities;
 
     @Before
