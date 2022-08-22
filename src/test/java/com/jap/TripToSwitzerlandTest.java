@@ -6,11 +6,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 public class TripToSwitzerlandTest {
-    SortingCities sortingCities;
+    TripToSwitzerland tripToSwitzerland;
 
     @Before
     public void setUp()  {
-        sortingCities = new SortingCities();
+        tripToSwitzerland = new TripToSwitzerland();
     }
 
     @After
@@ -23,7 +23,7 @@ public class TripToSwitzerlandTest {
         String city = "Bern";
         //act
         String expectedResult = "Bern";
-        String actualResult = sortingCities.main(new String[]{"Bern"});
+        String actualResult = tripToSwitzerland.main(new String[]{"Bern"});
         //assert
         Assert.assertEquals(expectedResult, actualResult);
     }
@@ -40,12 +40,12 @@ public class TripToSwitzerlandTest {
     }
 
     @Test
-    public void convertToUpper() {
+    public void convertToUpperCase() {
         //arrange
         String city = "Bern";
         //act
         String expectedResult = "BERN";
-        String actualResult = sortingCities.toUpperCase();
+        String actualResult = tripToSwitzerland.toUpperCase();
         //assert
         Assert.assertEquals(expectedResult, actualResult);
     }
