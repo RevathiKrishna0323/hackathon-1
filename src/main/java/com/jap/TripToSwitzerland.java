@@ -17,7 +17,15 @@ public class TripToSwitzerland {
     public String convertToUpperCase(String cities) {
         return cities.toUpperCase();
     }
-
+    //Find the city which is 52 kms from Zurich
+    public String[] CityAt52Km(String[] cities, int[] distances) {
+        String cityAt52Km = " ";
+        for (int index = 0; index < distances.length; index++) {
+            if (index == 52) ;
+            cityAt52Km = cities[index];
+        }
+        return cityAt52Km();
+    }
 
     //public String[] toUpperCase(String[] cities){
     //if(cities.equals(""))
