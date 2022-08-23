@@ -2,15 +2,15 @@ package com.jap;
 
 import java.util.Arrays;
 
-public class Traveller {
-    public static void main(String[] args) {
+public class TripToSwitzerland {
+    public static String[] main(String[] args) {
 
         // Creating an array of strings.
         String[] Cities = {"Bern", "Lucerne", "Interlaken", "Grindelwald", "Engelberg", "Geneva", "Murren", "Basel", "Zermatt", "Jungfraujoch"};
         // Creating an array of integers.
         int[] distance = {138, 52, 118, 136, 85, 276, 103, 87, 214, 101};
         // Creating an object of the class Traveller.
-        Traveller traveller = new Traveller();
+        TripToSwitzerland traveller = new TripToSwitzerland();
         // Calling the method toUpperCase and passing the array of cities as an argument.
         String Result = traveller.toUpperCase(Arrays.toString(Cities));
         // Printing the result of the method call.
@@ -18,20 +18,21 @@ public class Traveller {
 
 
         // This is a method call.
-        String[] cities = Traveller.toSortCityArray(Cities);
+        String[] cities = TripToSwitzerland.toSortCityArray(Cities);
 
         // This is a method call.
-        int[] sortedDistance = Traveller.toSortDistanceArray(distance);
+        int[] sortedDistance = TripToSwitzerland.toSortDistanceArray(distance);
 
         // This is a method call.
-        String city = Traveller.toFindNearestCity(distance, cities);
+        String city = TripToSwitzerland.toFindNearestCity(distance, cities);
         System.out.println("Nearest city 52 km is equal to = " + city);
 
 
         // This is a method call.
-        String CityDistance = Traveller.toFindFartestCity(distance, cities);
+        String CityDistance = TripToSwitzerland.toFindFartestCity(distance, cities);
         System.out.println("Nearest City 270 km is equal to = " + CityDistance);
 
+        return Cities;
     }
 
     /**
