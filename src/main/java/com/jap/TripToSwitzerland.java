@@ -8,7 +8,7 @@ public class TripToSwitzerland {
         // Creating an array of strings.
         String[] Cities = {"Bern", "Lucerne", "Interlaken", "Grindelwald", "Engelberg", "Geneva", "Murren", "Basel", "Zermatt", "Jungfraujoch"};
         // Creating an array of integers.
-        int[] distance = {138, 52, 118, 136, 85, 276, 103, 87, 214, 101};
+        int[] distances = {138, 52, 118, 136, 85, 276, 103, 87, 214, 101};
         // Creating an object of the class Traveller.
         TripToSwitzerland traveller = new TripToSwitzerland();
         // Calling the method toUpperCase and passing the array of cities as an argument.
@@ -21,15 +21,15 @@ public class TripToSwitzerland {
         String[] cities = TripToSwitzerland.toSortCityArray(Cities);
 
         // This is a method call.
-        int[] sortedDistance = TripToSwitzerland.toSortDistanceArray(distance);
+        int[] sortedDistance = TripToSwitzerland.toSortDistanceArray(distances);
 
         // This is a method call.
-        String city = TripToSwitzerland.toFindNearestCity(distance, cities);
+        String city = TripToSwitzerland.toFindNearestCity(distances, cities);
         System.out.println("Nearest city 52 km is equal to = " + city);
 
 
         // This is a method call.
-        String CityDistance = TripToSwitzerland.toFindFartestCity(distance, cities);
+        String CityDistance = TripToSwitzerland.toFindFartestCity(distances, cities);
         System.out.println("Nearest City 270 km is equal to = " + CityDistance);
 
         return Cities;
